@@ -9,6 +9,10 @@ class App extends Component {
     hamburgerActive: false
   }
   componentDidMount(){
+    window.gm_authFailure = () => {
+      alert('ERROR!! \nFailed to get Google map.')
+      console.log('ERROR!! \nFailed to get Google map.')
+   }
     this.getVenues()
   }
   renderMap = () => {
@@ -151,7 +155,7 @@ filtermyvenue(query) {
 
   render() {
     return (  
-      <main>
+      <main role="main">
       <div className="header" aria-label="name">
         <button aria-label='Hamburger Menu' tabIndex='0' role="menu" className="hamburger-container" onClick={this.onSidebarClick}> 
           <div className="hamburger-bar"></div>
@@ -170,7 +174,7 @@ filtermyvenue(query) {
               this.state.filtermyvenue && this.state.filtermyvenue.length > 0 && this.state.filtermyvenue.map((myvenue, index) => (
                   <div tabIndex="-1" key={index} className="venue-item">
                       {/* <h4>{myvenue.venue.name}</h4> */}
-                      <ul><li aria-label="search" onClick={()=>{this.listItemClick(myvenue.venue)}}>{myvenue.venue.name}</li>
+                      <ul role="list"><li role="link" aria-label="search" onClick={()=>{this.listItemClick(myvenue.venue)}}>{myvenue.venue.name}</li>
                   </ul>
                   </div>
               ))
