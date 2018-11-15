@@ -162,7 +162,7 @@ filtermyvenue(query) {
           <div className="hamburger-bar"></div>
           <div className="hamburger-bar"></div>
         </button>
-        <div className="title"><strong>Restaurants</strong></div></div>
+        <span className="title"><strong>Restaurants</strong></span></div>
           
         <div role="application" aria-label="map" id='map'></div>
         
@@ -174,7 +174,7 @@ filtermyvenue(query) {
               this.state.filtermyvenue && this.state.filtermyvenue.length > 0 && this.state.filtermyvenue.map((myvenue, index) => (
                   <div tabIndex="-1" key={index} className="venue-item">
                       {/* <h4>{myvenue.venue.name}</h4> */}
-                      <ul role="list"><li role="link" aria-label="search" onClick={()=>{this.listItemClick(myvenue.venue)}}>{myvenue.venue.name}</li>
+                      <ul><li role="link" aria-label="search" onClick={()=>{this.listItemClick(myvenue.venue)}}>{myvenue.venue.name}</li>
                   </ul>
                   </div>
               ))
