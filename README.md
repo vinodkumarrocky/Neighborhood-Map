@@ -27,9 +27,9 @@ You will also see any lint errors in the console.
 
 ### run the app in production build
 
-npm install -g serve
-serve -s build
-npm run serve
+npm install -g serve<br>
+serve -s build<br>
+npm run serve<br>
 Open [http://localhost:5000]
 
 ### Dependencies
