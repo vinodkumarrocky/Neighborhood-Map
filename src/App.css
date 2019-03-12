@@ -83,14 +83,13 @@ html,body{
   font-size: 60px;
   float: none;
   color: #ffff;
-  margin-left: 661px;
+  margin-left: 500px;
   font-family: 'IBM Plex Serif', serif;
 }
 
 .header{
   overflow: hidden;
   background-color: #282c34;
-  padding: 20px 10px;
   display: flex;
   
 }
