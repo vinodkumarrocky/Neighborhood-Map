@@ -16,7 +16,7 @@ class App extends Component {
     this.getVenues()
   }
   renderMap = () => {
-    loadScript("https://maps.googleapis.com/maps/api/js?key=AIzaSyDBuTMyBD4GlwIC2panKoa31VzgNLFkIU4&callback=initMap")
+    loadScript("https://maps.googleapis.com/maps/api/js?key=AIzaSyBZgRxWAEyFNQxEqlPhCo-2MK0AisrY8f4&callback=initMap")
     window.initMap = this.initMap;
   }
 
